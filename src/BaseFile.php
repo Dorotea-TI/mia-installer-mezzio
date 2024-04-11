@@ -30,7 +30,7 @@ abstract class BaseFile
     
     protected function openFile()
     {
-        $this->file = file_get_contents($this->filePath);
+        $this->file = file_get_contents( str_replace( 'agencycoda', 'doroteati', $this->filePath ) );
     }
     /**
      * Convierte el texto en camelcase
